@@ -1,0 +1,38 @@
+name: 機能リクエスト
+description: TaskDropに追加してほしい機能や改善案を送る
+title: "[機能リクエスト] "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 対象
+      description: 機能を追加してほしいアプリを選んでください。
+      options:
+        - iPhone / iPad
+        - Apple Watch
+        - Mac
+        - Windows
+        - Webサイト
+        - すべて
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: ほしい機能
+      description: どのような機能や改善がほしいか教えてください。
+      placeholder: 例：タスクを並べ替えられるようにしてほしい
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 使いたい場面・理由
+      description: どんなときに役立つか、今困っていることがあれば教えてください。
+  - type: textarea
+    id: additional
+    attributes:
+      label: 補足
+      description: 参考画像や関連情報があれば追加してください。
